@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program Files\maven-respostory\repository" />
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectId" id="1ZBx4BN6GOVzKQhlu0nx7cSwuoy" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8 (2)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/utils/wxgf" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dkm.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\dkm\work\dkm_pay_project\pay-resource\src\main\java\com\dkm\wxpay\utils\wxgf" />
+      <recent name="E:\dkm\work\dkm_pay_project\pay-resource\src\main\resources" />
+      <recent name="E:\dkm\work\dkm_pay_project" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="PayResourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="pay-resource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.PayResourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="" />
+      <created>1584326094715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584326094715</updated>
+      <workItem from="1584326100333" duration="13452000" />
+      <workItem from="1584405697391" duration="21584000" />
+      <workItem from="1584493033342" duration="22968000" />
+      <workItem from="1584579141988" duration="20810000" />
+      <workItem from="1584665209541" duration="10930000" />
+      <workItem from="1584676174543" duration="15279000" />
+      <workItem from="1584924832806" duration="7809000" />
+      <workItem from="1584934595586" duration="9513000" />
+      <workItem from="1585011385209" duration="8458000" />
+      <workItem from="1585040357063" duration="105000" />
+      <workItem from="1585096930076" duration="20057000" />
+      <workItem from="1585183991878" duration="10350000" />
+      <workItem from="1585209002728" duration="1583000" />
+      <workItem from="1585537416953" duration="754000" />
+      <workItem from="1585623769762" duration="66000" />
+      <workItem from="1585795388668" duration="26000" />
+      <workItem from="1585880842115" duration="116000" />
+      <workItem from="1585880999028" duration="239000" />
+      <workItem from="1585881418761" duration="19000" />
+      <workItem from="1585881500955" duration="9000" />
+      <workItem from="1585881669551" duration="7000" />
+      <workItem from="1585888077349" duration="455000" />
+      <workItem from="1585901916180" duration="421000" />
+      <workItem from="1586244720502" duration="33000" />
+      <workItem from="1586328614786" duration="713000" />
+      <workItem from="1586334293126" duration="1633000" />
+      <workItem from="1586480165447" duration="1218000" />
+      <workItem from="1586488823346" duration="28000" />
+      <workItem from="1586488897872" duration="407000" />
+      <workItem from="1586494727640" duration="667000" />
+      <workItem from="1586501216383" duration="173000" />
+      <workItem from="1586573736256" duration="11000" />
+      <workItem from="1586574301709" duration="9000" />
+      <workItem from="1586576994061" duration="112000" />
+      <workItem from="1586587705878" duration="66000" />
+      <workItem from="1586593720368" duration="1555000" />
+      <workItem from="1586595324325" duration="835000" />
+      <workItem from="1586599861471" duration="92000" />
+      <workItem from="1586603419101" duration="16000" />
+      <workItem from="1586603459544" duration="43000" />
+      <workItem from="1586605147031" duration="3874000" />
+      <workItem from="1586741746354" duration="676000" />
+      <workItem from="1586745119842" duration="1422000" />
+      <workItem from="1586750702518" duration="58000" />
+      <workItem from="1586845801494" duration="1399000" />
+      <workItem from="1586913225073" duration="490000" />
+      <workItem from="1586915618880" duration="2199000" />
+      <workItem from="1586917858562" duration="16000" />
+      <workItem from="1586937921284" duration="1047000" />
+      <workItem from="1586940869044" duration="412000" />
+      <workItem from="1586998672624" duration="1860000" />
+      <workItem from="1587001864659" duration="264000" />
+      <workItem from="1587008012205" duration="190000" />
+      <workItem from="1587008979885" duration="337000" />
+      <workItem from="1587009532279" duration="210000" />
+      <workItem from="1587016380368" duration="5870000" />
+      <workItem from="1587027715520" duration="18000" />
+      <workItem from="1587030683731" duration="6232000" />
+      <workItem from="1587089305392" duration="2137000" />
+      <workItem from="1587101517414" duration="52000" />
+      <workItem from="1587102520329" duration="91000" />
+      <workItem from="1587103094523" duration="126000" />
+      <workItem from="1587106232432" duration="5357000" />
+      <workItem from="1587180485028" duration="1362000" />
+      <workItem from="1587199019924" duration="234000" />
+      <workItem from="1587357424744" duration="1216000" />
+      <workItem from="1587367011946" duration="690000" />
+      <workItem from="1588044048173" duration="39000" />
+      <workItem from="1588044229049" duration="312000" />
+      <workItem from="1588220262486" duration="125000" />
+      <workItem from="1588221237636" duration="39000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

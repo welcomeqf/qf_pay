@@ -1,0 +1,19 @@
+server:
+  port: 8000
+  max-http-header-size: 102400
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:com/dkm/*/dao/mapper/*.xml
+spring:
+  profiles:
+    active: dev
+  application:
+    name: pay-resource
+  jmx:
+    enabled: false
+
+app:
+  workerId: 9
+  dataCenterId: 1
+

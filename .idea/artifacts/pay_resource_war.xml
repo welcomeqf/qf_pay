@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pay-resource:war">
+    <output-path>$PROJECT_DIR$/pay-resource/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>pay-resource</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="dkm_pay_resource.war">
+      <element id="artifact" artifact-name="pay-resource:war exploded" />
+    </root>
+  </artifact>
+</component>
