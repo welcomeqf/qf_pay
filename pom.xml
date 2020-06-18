@@ -6,6 +6,7 @@
     <modules>
         <module>common</module>
         <module>pay-resource</module>
+        <module>back-admin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,16 +25,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

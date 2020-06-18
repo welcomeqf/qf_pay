@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/back" />
+    <file type="web" url="file://$PROJECT_DIR$/back-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/pay-back" />
     <file type="web" url="file://$PROJECT_DIR$/pay-resource" />
   </component>
   <component name="MavenProjectsManager">
@@ -8,10 +11,12 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pay-resource/pom.xml" />
+        <option value="$PROJECT_DIR$/back-admin/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/pay-back/pom.xml" />
         <option value="$PROJECT_DIR$/pay-common/pom.xml" />
       </set>
     </option>

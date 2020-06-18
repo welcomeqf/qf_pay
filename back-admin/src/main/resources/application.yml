@@ -1,0 +1,22 @@
+server:
+  port: 7012
+  max-http-header-size: 102400
+mybatis-plus:
+  mapper-locations: classpath:com/dkm/*/dao/mapper/*.xml
+spring:
+  application:
+    name: back-admin
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:mysql://192.168.10.133:3306/dkm_pay?useUnicode=true&useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: kgdatj1110
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #去掉模板引擎的缓存
+  thymeleaf:
+    cache: false
+
+app:
+  workerId: 9
+  dataCenterId: 1

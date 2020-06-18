@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/back-admin/back-admin.iml" filepath="$PROJECT_DIR$/back-admin/back-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/dkm_pay_project.iml" filepath="$PROJECT_DIR$/dkm_pay_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/pay-resource/pay-resource.iml" filepath="$PROJECT_DIR$/pay-resource/pay-resource.iml" />

@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="dkm_pay_resource.war">
+    <root id="archive" name="pay.war">
       <element id="artifact" artifact-name="pay-resource:war exploded" />
     </root>
   </artifact>

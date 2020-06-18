@@ -8,16 +8,15 @@ import com.dkm.authUser.service.IAuthService;
 import com.dkm.constanct.CodeType;
 import com.dkm.exception.ApplicationException;
 import com.dkm.jwt.entity.UserLoginQuery;
-import com.dkm.jwt.islogin.CheckToken;
 import com.dkm.utils.JwtUtil;
 import com.dkm.utils.StringUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.poi.ss.formula.functions.T;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -64,7 +63,6 @@ public class AuthController {
          @ApiImplicitParam(name = "authPassword", value = "设备密码", required = true, dataType = "String", paramType = "path"),
    })
    @PostMapping("/authLogin")
-   @CrossOrigin
    public TokenResultVo authLogin (@RequestBody AuthLoginVo vo) {
 
       if (StringUtils.isBlank(vo.getAuthPassword()) || StringUtils.isBlank(vo.getAuthUserKey())) {
@@ -84,15 +82,16 @@ public class AuthController {
 
    @ApiOperation(value = "查询所有设备", notes = "查询所有设备")
    @GetMapping("/listAuth")
-   @CrossOrigin
-   public List<AuthInfo> listAuth () {
-      return authService.listAuth();
+   public String listAuth (Model model) {
+      List<AuthInfo> list = authService.listAuth();
+      System.out.println("--->" +list);
+      model.addAttribute("list",list);
+      return "home";
    }
 
    @ApiOperation(value = "查询一条设备信息", notes = "查询一条设备信息")
    @ApiImplicitParam(name = "id", value = "id", required = true, dataType = "Long", paramType = "path")
    @GetMapping("/queryAuthOne")
-   @CrossOrigin
    public AuthInfo queryAuthOne (@RequestParam("id") Long id) {
       return authService.queryAuthOne(id);
    }

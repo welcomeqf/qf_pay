@@ -18,7 +18,6 @@ import com.dkm.pay.entity.wxBo.WxResultBo;
 import com.dkm.pay.service.IPayInfoService;
 import com.dkm.utils.IdGenerator;
 import com.dkm.utils.StringUtils;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
