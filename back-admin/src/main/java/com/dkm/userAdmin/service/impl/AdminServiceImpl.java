@@ -43,6 +43,7 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, UserAdmin> implem
       UserAdmin admin = new UserAdmin();
       admin.setId(idGenerator.getNumberId());
       admin.setUserName(userName);
+      admin.setStatus(0);
       admin.setUserPassword(ShaUtils.getSha1(password));
 
       int insert = baseMapper.insert(admin);

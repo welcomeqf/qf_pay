@@ -1,8 +1,98 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<base th:href="${#request.getContextPath() + '/'}">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>注&nbsp;&nbsp;&nbsp;册</title>
+    <meta charset="utf-8">
+    <title></title>
 </head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+        height:968px;
+        background-image: linear-gradient(#97FFFF, #9198e5);
+    }
+    .middle{
 
+        position: absolute;width:600px;height:400px;left:45%;top:40%;
+        margin-left:-200px;margin-top:-100px;
+    }
+    .input{
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .All-input{
+        text-align: center;
+        background-color: #00a2d4;
+        /*text-align: center;*/
+        line-height: 50px;
+        width: 100%;
+    }
+    .register{
+        width: 125px;
+        border-radius: 10px;
+        height: 40px;
+        color: green;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        outline-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .login{
+        width: 125px;
+        border-radius: 10px;
+        height: 40px;
+        background-color: #2d78f4;
+        border: 1px solid #2d78f4;
+
+    }
+
+    fieldset{
+        width: 550px;
+        border-radius: 10px;
+        border: 2px solid #4fbaba;
+        opacity: 0.9;
+    }
+    legend{
+        position: relative;
+        text-align: center;
+        padding: 10px 50px;
+    }
+
+    .register-det{
+        width: 158px;
+        border-radius: 10px;
+        height: 40px;
+        color: green;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        margin-left: 9%;
+    }
+
+</style>
+<body>
+<div class="middle">
+    <div class="All-input">
+        <fieldset>
+            <legend>
+                <h1>第三方支付系统注册</h1>
+            </legend>
+            <form th:action="${#request.getContextPath() + '/v1/admin/addAdmin'}" method="post">
+                <span>用户名：</span>
+                <input type="text" name="userName" class="input" />
+                <p>
+                    <span>密&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+                    <input type="password" name="password" class="input" />
+                </p>
+                <div>
+                    <input class="register-det" type="submit" value="注册"/>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</div>
+</body>
 </html>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/userAdmin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/userAdmin/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-admin/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-admin/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/register.html" afterDir="false" />
     </list>
@@ -212,7 +213,8 @@
       <workItem from="1592375144273" duration="10000" />
       <workItem from="1592461227018" duration="79000" />
       <workItem from="1592476902839" duration="4122000" />
-      <workItem from="1592545448001" duration="890000" />
+      <workItem from="1592545448001" duration="964000" />
+      <workItem from="1592547723560" duration="589000" />
     </task>
     <servers />
   </component>

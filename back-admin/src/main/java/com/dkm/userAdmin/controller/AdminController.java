@@ -13,6 +13,7 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -22,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
  **/
 @Api
 @Slf4j
-@RestController
+@Controller
 @RequestMapping("/v1/admin")
 public class AdminController {
 
@@ -35,8 +36,7 @@ public class AdminController {
          @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String", paramType = "path"),
    })
    @PostMapping("/addAdmin")
-   @CrossOrigin
-   public LoginVo addAdmin (@RequestBody AdminVo vo) {
+   public String addAdmin (AdminVo vo) {
 
       if (StringUtils.isBlank(vo.getUserName()) || StringUtils.isBlank(vo.getPassword())) {
          throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
@@ -44,7 +44,7 @@ public class AdminController {
 
       LoginVo loginVo = adminService.addAdmin(vo.getUserName(), vo.getPassword());
 
-      return loginVo;
+      return "index";
    }
 
 
@@ -54,8 +54,7 @@ public class AdminController {
          @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String", paramType = "path"),
    })
    @PostMapping("/loginAdmin")
-   @CrossOrigin
-   public ResultVo loginAdmin (@RequestBody AdminVo vo) {
+   public String loginAdmin (AdminVo vo) {
 
       if (StringUtils.isBlank(vo.getUserName()) || StringUtils.isBlank(vo.getPassword())) {
          throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
@@ -63,10 +62,7 @@ public class AdminController {
 
        adminService.loginAdmin(vo.getUserName(), vo.getPassword());
 
-      ResultVo resultVo = new ResultVo();
-      resultVo.setResult("ok");
-
-      return resultVo;
+      return "adminIndex";
 
    }
 
