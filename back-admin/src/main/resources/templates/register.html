@@ -42,9 +42,9 @@
         text-decoration: none;
     }
     .login{
-        width: 125px;
+        width: 300px;
         border-radius: 10px;
-        height: 40px;
+        height: 100px;
         background-color: #2d78f4;
         border: 1px solid #2d78f4;
 
@@ -88,6 +88,7 @@
                     <input type="password" name="password" class="input" />
                 </p>
                 <div>
+                    <a class="login" th:href="${#request.getContextPath()} + '/toPage/index'">返回</a>
                     <input class="register-det" type="submit" value="注册"/>
                 </div>
             </form>
