@@ -27,34 +27,12 @@ import java.util.List;
  * @vesion 1.0
  **/
 @Api(tags = "设备权限API")
-@RestController
+@Controller
 @RequestMapping("/v1/auth")
 public class AuthController {
 
    @Autowired
    private IAuthService authService;
-
-   @ApiOperation(value = "注册设备或修改", notes = "注册设备或修改")
-   @ApiImplicitParams({
-         @ApiImplicitParam(name = "id", value = "id", required = false, dataType = "Long", paramType = "path"),
-         @ApiImplicitParam(name = "authName", value = "设备名称", required = true, dataType = "String", paramType = "path"),
-         @ApiImplicitParam(name = "authDescribe", value = "设备描述", required = false, dataType = "String", paramType = "path"),
-         @ApiImplicitParam(name = "appId", value = "appId", required = false, dataType = "String", paramType = "path"),
-         @ApiImplicitParam(name = "wxAppId", value = "微信appId", required = false, dataType = "String", paramType = "path"),
-         @ApiImplicitParam(name = "mchId", value = "微信商户id", required = false, dataType = "String", paramType = "path"),
-         @ApiImplicitParam(name = "paterNerKey", value = "微信支付密钥", required = false, dataType = "String", paramType = "path"),
-         @ApiImplicitParam(name = "isStopped", value = "是否停用(0-正常 1-停用)", required = true, dataType = "int", paramType = "path"),
-   })
-   @PostMapping("/registerAuth")
-   @CrossOrigin
-   public AuthLoginVo registerAuth (@RequestBody AuthRegisterVo vo) {
-
-      if (StringUtils.isBlank(vo.getAuthName()) || vo.getIsStopped() == null) {
-         throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
-      }
-
-      return authService.registerAuth(vo);
-   }
 
 
    @ApiOperation(value = "登录设备", notes = "登录设备")
@@ -78,15 +56,6 @@ public class AuthController {
       resultVo.setToken(token);
       resultVo.setExp("24小时");
       return resultVo;
-   }
-
-   @ApiOperation(value = "查询所有设备", notes = "查询所有设备")
-   @GetMapping("/listAuth")
-   public String listAuth (Model model) {
-      List<AuthInfo> list = authService.listAuth();
-      System.out.println("--->" +list);
-      model.addAttribute("list",list);
-      return "home";
    }
 
    @ApiOperation(value = "查询一条设备信息", notes = "查询一条设备信息")

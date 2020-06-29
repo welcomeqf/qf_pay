@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<base th:href="${#request.getContextPath()} + '/'">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<style>
+    .main{
+        min-width: 800px;
+        width: 43%;
+        margin-left: 28%;
+        /* background-color: white; */
+
+        /* background-color: #0000FF; */
+        height: 400px;
+    }
+    .title{
+        text-align: center;
+        padding: 5px 0px 5px 20px;
+        background-image: linear-gradient(to bottom right, green , white);
+        border-radius: 5px;
+        /* background-image: linear-gradient(#97FFFF, #9198e5); */
+    }
+    .left{
+        padding-left: 40px;
+        width: 350px;
+        float: left;
+    }
+    .right{
+        width: 350px;
+        float: right;
+    }
+    .div_lable{
+        padding: 10px;
+    }
+    .lable_name{
+        font-size: 14px;
+    }
+    .input_text{
+        border: 1px gray solid;
+        border-radius: 10px;
+    }
+    .input_text_textarea{
+        margin-top: 10px;
+        border: 1px gray solid;
+        border-radius: 10px;
+    }
+    .button {
+        position: absolute;
+        top: 280px;
+        left: 41%;
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-left: 90px;
+        border-radius: 10PX;
+        width: 160PX;
+    }
+    #toggle-button{ display: none; }
+    .button-label{
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        background-color: #ccc;
+        box-shadow: none 0px 0px 0px 2px;
+        border-radius: 30px;
+        overflow: hidden;
+        margin-left: 50px;
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .button-label .text {
+        line-height: 30px;
+        font-size: 18px;
+        text-shadow: 0 0 0px #ddd;
+    }
+
+    .on { color: #fff; display: none; text-indent: 10px;}
+    .off { color: #fff; display: inline-block; text-indent: 34px;margin-left: 20px;}
+    .button-label .circle{
+        left: 0;
+        transition: all 0.5s;
+    }
+    #toggle-button:checked + label.button-label .circle{
+        left: 50px;
+    }
+    #toggle-button:checked + label.button-label .on{ display: inline-block; }
+    #toggle-button:checked + label.button-label .off{ display: none; }
+    #toggle-button:checked + label.button-label{
+        background-color: dodgerblue;
+    }
+</style>
+<body>
+<div class="main">
+    <div class="title">
+        <h1>设备管理</h1>
+    </div>
+    <form th:action="${#request.getContextPath()} + '/v1/auth/registerAuth'" method="post">
+        <div class="left">
+            <div class="div_lable">
+                <label class="lable_name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设 备 名 称：</label>
+                <input type="text" name="authName" class="input_text" />
+            </div>
+            <div class="div_lable">
+                <label class="lable_name">&nbsp;&nbsp;微&nbsp;&nbsp; 信&nbsp; appid：</label>
+                <input type="text" name="wxAppId" class="input_text" />
+            </div>
+            <div class="div_lable">
+                <label class="lable_name">&nbsp;&nbsp;微 信 商 户 id：</label>
+                <input type="text" name="mchId" class="input_text" />
+            </div>
+            <div class="div_lable">
+                <div class="toggle-button-wrapper">
+                    <label class="lable_name">&nbsp;&nbsp;是&nbsp;&nbsp;否&nbsp;&nbsp;&nbsp;停&nbsp;&nbsp; 用：</label>
+                    <input type="checkbox" id="toggle-button" name="switch">
+                    <label for="toggle-button" class="button-label">
+                        <span class="text on">开</span>
+                        <span class="text off">关</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="div_lable">
+                <label class="lable_name">支 付 宝&nbsp; appid：</label>
+                <input type="text" name="appId" class="input_text" />
+            </div>
+            <div class="div_lable">
+                <label class="lable_name">&nbsp;&nbsp;&nbsp;微 信支付密钥：</label>
+                <input type="text" name="paterNerKey" class="input_text" />
+            </div>
+            <div class="div_lable">
+                <label class="lable_name">&nbsp;&nbsp;设&nbsp;&nbsp;备&nbsp;&nbsp; 描&nbsp;&nbsp; 述：</label>
+<!--                <input type="text" name="authDescribe" class="input_text" />-->
+                <textarea name="authDescribe" class="input_text_textarea"> </textarea>
+            </div>
+            <div class="div_lable">
+
+                <div class="button_div">
+                    <input type="submit" class="button" value="提交" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+

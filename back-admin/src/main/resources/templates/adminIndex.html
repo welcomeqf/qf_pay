@@ -67,7 +67,7 @@
 <!--                       class="nav-top-item no-submenu"> 主页 </a></li>-->
                 <li><a class="nav-top-item"> 支付管理 </a>
                     <ul>
-                        <li><a onclick="itemclick(this);" name="table.html">增加设备</a></li>
+                        <li><a th:href="${#request.getContextPath()} + '/toPage/addAuth'">增加设备</a></li>
                         <li><a onclick="itemclick(this);" name="form.html">修改设备</a></li>
                         <li><a onclick="itemclick(this);" name="notifocation.html">通知</a></li>
                     </ul>
@@ -77,7 +77,7 @@
     </div>
     <div style="margin: 0 0 0 230px;">
         <!-- End #sidebar -->
-        <iframe id="homeframe" name="homeframe" th:src="${#request.getContextPath()} + '/toPage/home'"
+        <iframe id="homeframe" name="homeframe" th:src="${#request.getContextPath()} + '/v1/auth/listAuth'"
                 width="100%" scrolling="auto"  />
     </div>
 </div>

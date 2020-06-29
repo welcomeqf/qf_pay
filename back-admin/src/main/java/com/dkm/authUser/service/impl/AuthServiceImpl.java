@@ -59,6 +59,7 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
          authId = idGenerator.getNumberId();
          authInfo.setId(authId);
          authInfo.setAuthUser(key);
+         authInfo.setIsStopped(0);
          authInfo.setAuthPassword(ShaUtils.getSha1(secret));
          //注册设备
          int insert = baseMapper.insert(authInfo);

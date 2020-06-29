@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/addAuth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-admin/src/main/resources/templates/adminIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/adminIndex.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-admin/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-admin/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-admin/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,6 +220,11 @@
       <workItem from="1592545448001" duration="964000" />
       <workItem from="1592547723560" duration="2010000" />
       <workItem from="1592804447470" duration="1216000" />
+      <workItem from="1593393510252" duration="621000" />
+      <workItem from="1593410331314" duration="2921000" />
+      <workItem from="1593413376772" duration="44000" />
+      <workItem from="1593417153549" duration="317000" />
+      <workItem from="1593431891710" duration="6361000" />
     </task>
     <servers />
   </component>

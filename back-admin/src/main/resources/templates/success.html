@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<base th:href="${#request.getContextPath()} + '/'">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a></a>
+<a th:href="${#request.getContextPath()} + '/toPage/adminIndex'" style="text-align: center">操作成功!</a>
+<a th:value="${authUserKey}" id="key"></a>
+<a th:value="${authPassword}" id="password"></a>
+</body>
+</html>
+
+<script>
+    var key = document.getElementById("key").getAttribute("value");
+    var password = document.getElementById("password").getAttribute("value");
+    alert("添加成功,请保存key和私钥,只会弹出一次!");
+    alert("authUserKey:" + key);
+    alert("authPassword:" + password)
+</script>

@@ -46,13 +46,18 @@ public class AuthController {
          @ApiImplicitParam(name = "isStopped", value = "是否停用(0-正常 1-停用)", required = true, dataType = "int", paramType = "path"),
    })
    @PostMapping("/registerAuth")
-   public AuthLoginVo registerAuth (AuthRegisterVo vo) {
+   public String registerAuth (AuthRegisterVo vo, Model model) {
 
-      if (StringUtils.isBlank(vo.getAuthName()) || vo.getIsStopped() == null) {
+      if (StringUtils.isBlank(vo.getAuthName())) {
          throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
       }
 
-      return authService.registerAuth(vo);
+      AuthLoginVo authLoginVo = authService.registerAuth(vo);
+
+      model.addAttribute("authUserKey",authLoginVo.getAuthUserKey());
+      model.addAttribute("authPassword",authLoginVo.getAuthPassword());
+
+      return "success";
    }
 
 
@@ -83,7 +88,6 @@ public class AuthController {
    @GetMapping("/listAuth")
    public String listAuth (Model model) {
       List<AuthInfo> list = authService.listAuth();
-      System.out.println("--->" +list);
       model.addAttribute("list",list);
       return "home";
    }
