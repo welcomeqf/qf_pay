@@ -67,6 +67,7 @@ public class AuthController {
          @ApiImplicitParam(name = "authPassword", value = "设备密码", required = true, dataType = "String", paramType = "path"),
    })
    @PostMapping("/authLogin")
+   @ResponseBody
    public TokenResultVo authLogin (@RequestBody AuthLoginVo vo) {
 
       if (StringUtils.isBlank(vo.getAuthPassword()) || StringUtils.isBlank(vo.getAuthUserKey())) {

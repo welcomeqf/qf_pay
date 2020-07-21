@@ -1,4 +1,4 @@
-package com.dkm.config;
+package com.dkm.projectfig;
 
 import com.dkm.jwt.Interceptor.AuthenticationInterceptor;
 import com.fasterxml.jackson.databind.ObjectMapper;

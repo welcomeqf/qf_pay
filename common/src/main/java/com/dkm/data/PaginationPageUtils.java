@@ -1,23 +1,19 @@
-package com.dkm.aop.beans;
+package com.dkm.data;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 /**
  * @author qf
- * @date 2020/3/6
+ * @date 2020/7/20
  * @vesion 1.0
  **/
-public abstract class Aspect extends SpringBootServletInitializer {
+@Component
+public class PaginationPageUtils {
 
-   /**
-    * 多表分页的bean
-    * @return
-    */
    @Bean
    public PaginationInterceptor paginationInterceptor() {
       return new PaginationInterceptor();
    }
-
 }

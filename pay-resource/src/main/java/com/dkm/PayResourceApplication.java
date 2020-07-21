@@ -9,11 +9,14 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * @author qf
+ */
 @SpringBootApplication
 @EnableTransactionManagement
 @EnableSwagger2
 @MapperScan("com.dkm.*.dao")
-public class PayResourceApplication extends Aspect {
+public class PayResourceApplication extends SpringBootServletInitializer {
 
    public static void main(String[] args) {
       SpringApplication.run(PayResourceApplication.class, args);

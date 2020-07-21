@@ -1,10 +1,15 @@
 package com.dkm.wxpay.controller;
 
+import com.dkm.constanct.CodeType;
+import com.dkm.exception.ApplicationException;
 import com.dkm.jwt.islogin.CheckToken;
 import com.dkm.pay.entity.wxBo.WxInsertBo;
 import com.dkm.pay.entity.wxBo.WxResultBo;
 import com.dkm.pay.service.IPayInfoService;
 import com.dkm.utils.IdGenerator;
+import com.dkm.utils.StringUtils;
+import com.dkm.wxpay.entity.WxResultVo;
+import com.dkm.wxpay.service.IWxService;
 import com.dkm.wxpay.utils.HttpRequest;
 import com.dkm.wxpay.utils.WxUtils;
 import com.github.wxpay.sdk.WXPayConfig;
@@ -32,20 +37,8 @@ import java.util.Map;
 @RequestMapping("/v1/wxPay")
 public class WxController {
 
-   @Value("${wx.pay}")
-   private String wxUrl;
-
-   /**
-    * 证书位置
-    */
-   @Value("${wx.certUrl}")
-   private String certUrl;
-
    @Autowired
-   private IdGenerator idGenerator;
-
-   @Autowired
-   private IPayInfoService payInfoService;
+   private IWxService wxService;
 
 
    @ApiOperation(value = "微信企业给个人发红包", notes = "微信企业给个人发红包")
@@ -56,59 +49,13 @@ public class WxController {
    @GetMapping("/toPerson")
    @CrossOrigin
    @CheckToken
-   public Map<String, String> orders(@RequestParam("openId") String openId,
-                                     @RequestParam("price") Double price) {
+   public WxResultVo orders(@RequestParam("openId") String openId,
+                            @RequestParam("price") Double price) {
 
-      //先执行业务操作，再去调用微信支付
-      String orderCode = idGenerator.getOrderCode();
-      WxInsertBo bo = new WxInsertBo();
-      bo.setOrderNo(orderCode);
-      bo.setBody(null);
-      bo.setNotifyUrl(null);
-      bo.setPrice(price);
-      WxResultBo wxResultBo = payInfoService.insertWxPayInfo(bo);
-
-      try {
-
-         // 拼接统一下单地址参数
-         Map<String, String> paraMap = new HashMap<String, String>();
-
-         paraMap.put("mch_appid", wxResultBo.getWxAppId());
-         // 商户ID
-         paraMap.put("mchid", wxResultBo.getMchId());
-         paraMap.put("nonce_str", WXPayUtil.generateNonceStr());
-         paraMap.put("partner_trade_no", orderCode);
-         paraMap.put("openid", openId);
-         // 支付金额，单位分
-         //元转分
-         Integer money = WxUtils.changeY2F(price);
-         paraMap.put("amount", String.valueOf(money));
-         paraMap.put("check_name", "NO_CHECK");
-         paraMap.put("desc", "红包");
-         // 将所有参数(map)转xml格式
-         String xml = WXPayUtil.generateSignedXml(paraMap, wxResultBo.getPaterNerKey());
-
-         String xmlStr = WxUtils.doPostSSL(wxUrl, xml, wxResultBo.getMchId(), certUrl);
-
-         // 以下内容是返回前端页面的json数据
-         Map<String,String> resultMap = new HashMap<>();
-         //将返回数据XML转为Map格式
-         Map<String, String> result = WXPayUtil.xmlToMap(xmlStr);
-
-         if ("SUCCESS".equals(result.get("return_code")) && "SUCCESS".equals(result.get("result_code")) ) {
-            resultMap.put("订单号", result.get("partner_trade_no"));
-            resultMap.put("微信付款单号", result.get("payment_no"));
-            resultMap.put("付款时间",result.get("payment_time"));
-            resultMap.put("status","0");
-            return resultMap;
-         } else {
-            resultMap.put("return_msg",result.get("return_msg"));
-            resultMap.put("status","1");
-            return resultMap;
-         }
-      } catch (Exception e) {
-         e.printStackTrace();
+      if (StringUtils.isBlank(openId) || price == null) {
+         throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
       }
-      return null;
+
+      return wxService.companyToPerson(openId, price);
    }
 }
