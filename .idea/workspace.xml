@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/data/PaginationPageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/entity/WxAppResultVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/entity/WxJsApiPayResultVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/entity/WxPayResultVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/entity/WxRefundResultVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/entity/WxRefundVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/entity/WxResultVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/service/IWxService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/service/impl/WxServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/aop/beans/Aspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/aop/beans/Aspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/Interceptor/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/Interceptor/AuthenticationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/aop/beans/Aspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/aop/beans/Aspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/AuthenticationInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/AuthenticationInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/PayResourceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/PayResourceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/config/LongToJsonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/projectfig/LongToJsonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/entity/AliRefundVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/IAliPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -248,7 +228,8 @@
       <workItem from="1593486492608" duration="1486000" />
       <workItem from="1593591095054" duration="409000" />
       <workItem from="1595232320698" duration="1909000" />
-      <workItem from="1595301378616" duration="9106000" />
+      <workItem from="1595301378616" duration="9603000" />
+      <workItem from="1595384898153" duration="1011000" />
     </task>
     <servers />
   </component>

@@ -98,7 +98,7 @@ public class WxPayController {
    @RequestMapping("/notify")
    @CrossOrigin
    public void callBack(HttpServletRequest request, HttpServletResponse response) {
-      //回调接口
+      //微信回调接口
       wxService.callBack (request, response);
    }
 
