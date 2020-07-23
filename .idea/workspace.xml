@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/entity/AliRefundVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/IAliPayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/impl/AliPayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +87,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackAdminApplication">
+  <component name="RunManager" selected="Spring Boot.PayResourceApplication">
+    <configuration name="AcdemicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="advertise-resource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.AcdemicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="back-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.BackAdminApplication" />
@@ -112,6 +115,7 @@
     <list>
       <item itemvalue="Spring Boot.BackAdminApplication" />
       <item itemvalue="Spring Boot.PayResourceApplication" />
+      <item itemvalue="Spring Boot.AcdemicApplication" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -229,7 +233,8 @@
       <workItem from="1593591095054" duration="409000" />
       <workItem from="1595232320698" duration="1909000" />
       <workItem from="1595301378616" duration="9603000" />
-      <workItem from="1595384898153" duration="1011000" />
+      <workItem from="1595384898153" duration="1638000" />
+      <workItem from="1595466611103" duration="3507000" />
     </task>
     <servers />
   </component>

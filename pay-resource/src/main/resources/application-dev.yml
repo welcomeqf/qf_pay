@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.10.133:3306/dkm_pay?useUnicode=true&useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://${mysql.ip}:3306/dkm_pay?useUnicode=true&useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: kgdatj1110
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,13 +13,13 @@ pay:
   aliPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr/YanWqRNNa4xl5cJE4N5iqwa8P9mU+LLYEmyd3vUYmaPN1w4x+qF/bFo0fR1J3BpAnVN8GpW524gK4w2y/K8hUuw4vEdFDnpAP2bYPIZVYZrJdQTdgqBIGeKYyMCke3ZJENamjHuIrSePd6V3k5lMFV2e9j6OUtH89Sam54SxKir6gxiUWL2V3W2EWJzV9+t+f2QJC8i0uIfFy2fslvPUMPEGLJWnmTMZ3I/tdjgOVb0OgEIF++6rRZEivK4mnnRyTXXONS1Lk0nu8WxpHBg3hdrRDbj1Pq0iDSM+GM5sBIzQJRgLAzArBbumibweat46C5jeV42vG5cC+bnHUUjQIDAQAB
   # 支付宝回调
   #  notifyServerUrl: http://www.fate-jie.top/returnPay/updateInfo
-  notifyServerUrl: http://192.168.10.133:20001/pay/returnPay/updateInfo
+  notifyServerUrl: http://${serve.ip}:${serve.port}/pay/returnPay/updateInfo
 wx:
   # 统一下单
   url: https://api.mch.weixin.qq.com/pay/unifiedorder
   # 微信异步回调
   #  notifyUrl: http://www.fate-jie.top/v1/wx/notify
-  notifyUrl: http://192.168.10.133:20001/pay/v1/wx/notify
+  notifyUrl: http://${serve.ip}:${serve.port}/pay/v1/wx/notify
   # 退款接口
   refundUrl: https://api.mch.weixin.qq.com/secapi/pay/refund
   # 查询订单状态接口
@@ -30,4 +30,8 @@ wx:
   pay: https://api.mch.weixin.qq.com/mmpaymkttransfers/promotion/transfers
   certUrl: /root/cert/apiclient_cert.p12
   ip: 120.25.196.49
-
+mysql:
+  ip: 192.168.10.133
+serve:
+  ip: 192.168.10.133
+  port: 20001
