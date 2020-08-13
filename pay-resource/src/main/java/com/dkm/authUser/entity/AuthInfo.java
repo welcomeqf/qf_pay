@@ -11,6 +11,8 @@ import lombok.experimental.Accessors;
 import java.time.LocalDateTime;
 
 /**
+ * 所有第三方的设备表
+ * 统一管理
  * @author qf
  * @date 2020/3/16
  * @vesion 1.0
@@ -18,7 +20,7 @@ import java.time.LocalDateTime;
 @Data
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = false)
-@TableName("pay_auth")
+@TableName("all_auth")
 public class AuthInfo extends Model<AuthInfo> {
 
    /**
@@ -32,14 +34,9 @@ public class AuthInfo extends Model<AuthInfo> {
    private String appId;
 
    /**
-    * 设备名称
+    * 设备id
     */
-   private String authName;
-
-   /**
-    * 设备描述
-    */
-   private String authDescribe;
+   private Long authProjectId;
 
    /**
     * 设备登录用户名

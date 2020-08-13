@@ -54,7 +54,7 @@ public class PayInfoServiceImpl extends ServiceImpl<PayInfoMapper, PayInfo> impl
 
       PayInfo info = baseMapper.selectOne(wrapper);
 
-      UserLoginQuery user = localUser.getUser("user");
+      UserLoginQuery user = localUser.getUser();
 
       PayInfo payInfo = new PayInfo();
 
@@ -116,7 +116,7 @@ public class PayInfoServiceImpl extends ServiceImpl<PayInfoMapper, PayInfo> impl
 
       PayInfo info = baseMapper.selectOne(wrapper);
 
-      UserLoginQuery user = localUser.getUser("user");
+      UserLoginQuery user = localUser.getUser();
 
       //查询设备表中的appId
       AuthInfo authInfo = authService.queryAuthOne(user.getId());
@@ -202,7 +202,7 @@ public class PayInfoServiceImpl extends ServiceImpl<PayInfoMapper, PayInfo> impl
    @Override
    public String queryAppId() {
 
-      UserLoginQuery user = localUser.getUser("user");
+      UserLoginQuery user = localUser.getUser();
 
       AuthInfo authInfo = authService.queryAuthOne(user.getId());
 
@@ -220,7 +220,7 @@ public class PayInfoServiceImpl extends ServiceImpl<PayInfoMapper, PayInfo> impl
    @Override
    public WxRefundBo queryWxAppId() {
 
-      UserLoginQuery user = localUser.getUser("user");
+      UserLoginQuery user = localUser.getUser();
 
       AuthInfo authInfo = authService.queryAuthOne(user.getId());
 

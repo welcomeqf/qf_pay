@@ -1,0 +1,30 @@
+server:
+  port: 8002
+  max-http-header-size: 102400
+mybatis-plus:
+  mapper-locations: classpath:com/dkm/*/dao/mapper/*.xml
+spring:
+  profiles:
+    active: dev
+  application:
+    name: user-resource
+  jmx:
+    enabled: false
+
+app:
+  workerId: 9
+  dataCenterId: 1
+
+#微信密钥
+weChat:
+  access:
+    token:
+      url: https://api.weixin.qq.com/sns/oauth2/access_token
+      confirmation:
+        url: https://api.weixin.qq.com/sns/auth
+  app:
+    id: wx69abe63fb3af0007
+  secret: 0d53a67db5ed991d697999001657e621
+  user:
+    info:
+      url: https://api.weixin.qq.com/sns/userinfo

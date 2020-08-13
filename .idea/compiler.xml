@@ -6,13 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common" />
-        <module name="pay-resource" />
         <module name="back-admin" />
+        <module name="common" />
+        <module name="user-resource" />
         <module name="advertise-resource" />
+        <module name="admin-zuul" />
+        <module name="pay-resource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin-zuul" target="1.8" />
       <module name="advertise-resource" target="1.8" />
       <module name="back" target="1.8" />
       <module name="back-admin" target="1.8" />
@@ -20,10 +23,12 @@
       <module name="dkm_pay_project" target="1.8" />
       <module name="pay-resource" target="1.8" />
       <module name="payback" target="1.8" />
+      <module name="user-resource" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-zuul" options="-parameters" />
       <module name="advertise-resource" options="-parameters" />
       <module name="back" options="-parameters" />
       <module name="back-admin" options="-parameters" />
@@ -31,6 +36,7 @@
       <module name="dkm_pay_project" options="" />
       <module name="pay-resource" options="-parameters" />
       <module name="payback" options="-parameters" />
+      <module name="user-resource" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8003
   max-http-header-size: 102400
 mybatis-plus:
   mapper-locations: classpath:com/dkm/*/dao/mapper/*.xml

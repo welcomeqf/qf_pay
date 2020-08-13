@@ -31,7 +31,7 @@ wx:
   certUrl: /root/cert/apiclient_cert.p12
   ip: 120.25.196.49
 mysql:
-  ip: 192.168.10.133
+  ip: 192.168.10.254
 serve:
-  ip: 192.168.10.133
+  ip: 192.168.10.254
   port: 20001

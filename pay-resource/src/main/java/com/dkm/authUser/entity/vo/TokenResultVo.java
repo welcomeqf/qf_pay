@@ -10,7 +10,13 @@ import lombok.Data;
 @Data
 public class TokenResultVo {
 
+   /**
+    * token
+    */
    private String token;
 
-   private String exp;
+   /**
+    * 过期时间
+    */
+   private String expTime;
 }

@@ -12,6 +12,7 @@ import com.dkm.exception.ApplicationException;
 import com.dkm.jwt.entity.UserLoginQuery;
 import com.dkm.utils.IdGenerator;
 import com.dkm.utils.ShaUtils;
+import com.dkm.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -39,19 +40,27 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
    @Override
    public AuthLoginVo registerAuth(AuthRegisterVo vo) {
 
-      Long authId = null;
+      Long authId;
 
       AuthInfo authInfo = new AuthInfo();
-      authInfo.setAuthName(vo.getAuthName());
-      authInfo.setAuthDescribe(vo.getAuthDescribe());
-      authInfo.setAppId(vo.getAppId());
-      authInfo.setCreateDate(LocalDateTime.now());
+      authInfo.setAuthProjectId(vo.getAuthProjectId());
+      if (StringUtils.isNotBlank(vo.getAppId())) {
+         authInfo.setAppId(vo.getAppId());
+      }
       authInfo.setUpdateDate(LocalDateTime.now());
       authInfo.setIsStopped(vo.getIsStopped());
-
-      authInfo.setWxAppId(vo.getWxAppId());
-      authInfo.setMchId(vo.getMchId());
-      authInfo.setPaterNerKey(vo.getPaterNerKey());
+      if (vo.getIsStopped() != null) {
+         authInfo.setIsStopped(vo.getIsStopped());
+      }
+      if (StringUtils.isNotBlank(vo.getWxAppId())) {
+         authInfo.setWxAppId(vo.getWxAppId());
+      }
+      if (StringUtils.isNotBlank(vo.getMchId())) {
+         authInfo.setMchId(vo.getMchId());
+      }
+      if (StringUtils.isNotBlank(vo.getPaterNerKey())) {
+         authInfo.setPaterNerKey(vo.getPaterNerKey());
+      }
 
       if (vo.getId() == null) {
          String key = idGenerator.getOrderCode();
@@ -59,7 +68,8 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
          authId = idGenerator.getNumberId();
          authInfo.setId(authId);
          authInfo.setAuthUser(key);
-         authInfo.setAuthPassword(ShaUtils.getSha1(secret));
+         authInfo.setCreateDate(LocalDateTime.now());
+         authInfo.setAuthPassword(secret);
          //注册设备
          int insert = baseMapper.insert(authInfo);
 
@@ -93,11 +103,10 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
     */
    @Override
    public UserLoginQuery authLogin(AuthLoginVo vo) {
-      String password = ShaUtils.getSha1(vo.getAuthPassword());
 
       LambdaQueryWrapper<AuthInfo> wrapper = new LambdaQueryWrapper<AuthInfo>()
             .eq(AuthInfo::getAuthUser,vo.getAuthUserKey())
-            .eq(AuthInfo::getAuthPassword,password);
+            .eq(AuthInfo::getAuthPassword,vo.getAuthPassword());
 
       AuthInfo authInfo = baseMapper.selectOne(wrapper);
 
@@ -130,7 +139,9 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
     * @return
     */
    @Override
-   public List<AuthInfo> listAuth() {
-      return baseMapper.selectList(null);
+   public List<AuthInfo> listAuth(Long authProjectId) {
+      LambdaQueryWrapper<AuthInfo> wrapper = new LambdaQueryWrapper<AuthInfo>()
+            .eq(AuthInfo::getAuthProjectId, authProjectId);
+      return baseMapper.selectList(wrapper);
    }
 }

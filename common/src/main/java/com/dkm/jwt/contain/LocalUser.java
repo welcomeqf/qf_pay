@@ -31,11 +31,9 @@ public class LocalUser {
 
     /**
      * 得到用户信息
-     * @param key
      * @return
      */
-    public UserLoginQuery getUser (String key) {
-        UserLoginQuery result = (UserLoginQuery) map.get(key);
-        return result;
+    public UserLoginQuery getUser () {
+        return (UserLoginQuery) map.get("user");
     }
 }

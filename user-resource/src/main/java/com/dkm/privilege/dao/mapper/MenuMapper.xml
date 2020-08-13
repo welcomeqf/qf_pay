@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dkm.privilege.dao.UserMenuMapper">
+
+
+    <select id="queryListMenu" resultType="com.dkm.privilege.entity.vo.UserMenuPrivilegeVo">
+        select id as 'id',menu_name as 'menuName',parent_id as 'parentId'
+        from user_menu_base where parent_id in(select id from user_menu_base where parent_id = 0)
+        and auth_id = #{id}
+    </select>
+</mapper>

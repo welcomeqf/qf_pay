@@ -37,8 +37,9 @@ public interface IAuthService {
 
    /**
     * 查询所有设备
+    * @param authProjectId 工程id
     * @return
     */
-   List<AuthInfo> listAuth();
+   List<AuthInfo> listAuth(Long authProjectId);
 
 }

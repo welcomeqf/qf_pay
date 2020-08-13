@@ -2,7 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin-zuul/src/main/java/com/dkm/entity/ContinKeyVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-zuul/src/main/java/com/dkm/entity/ResultVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-zuul/src/main/java/com/dkm/fallback/FallBackProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-zuul/src/main/java/com/dkm/filter/ErroFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-zuul/src/main/java/com/dkm/filter/PostFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-zuul/src/main/java/com/dkm/filter/PreFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/controller/AuthProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/dao/AuthProjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/entity/AuthProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/entity/bo/AuthProjectBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/service/IAuthProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/service/impl/AuthProjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/dao/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/entity/UserAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/entity/vo/AdminVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/entity/vo/LoginVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/entity/vo/ResultVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/IAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/city/controller/UserCityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/city/dao/UserCityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/city/entity/UserCity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/city/entity/query/UserCityQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/city/service/IUserCityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/city/service/impl/UserCityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/controller/PrivilegeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/controller/UserMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/dao/PrivilegeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/dao/UserMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/dao/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/dao/mapper/PrivilegeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/entity/UserMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/entity/UserPrivilege.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/entity/bo/UserPrivilegeBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/entity/vo/MenuResultVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/entity/vo/UserMenuPrivilegeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/entity/vo/UserMenuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/service/IPrivilegeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/service/IUserMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/service/impl/PrivilegeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/privilege/service/impl/UserMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/role/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/role/dao/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/role/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/role/entity/bo/RoleAddBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/role/entity/vo/RoleVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/role/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/role/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/controller/AuthLoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/controller/UserLoginTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/dao/AuthLoginMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/dao/UserLoginTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/dao/mapper/AuthLoginMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/AuthLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/UserLoginType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/bo/AuthLoginBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/bo/AuthLoginInsertBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/bo/UserLoginTypeBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/vo/AuthLoginQueryResultVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/vo/AuthLoginVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/entity/vo/QueryLoginTypeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/service/IAuthLoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/service/IUserLoginTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/service/impl/AuthLoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/service/impl/UserLoginTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/WeChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/bo/UserBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/bo/UserInfoBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/bo/UserLoginBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/bo/WeChatUtilBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/vo/UserResultVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/utils/BodyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/utils/WeChatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-resource/src/main/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advertise-resource/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/advertise-resource/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/LocalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/LocalUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/entity/PrivilegeMenuQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/entity/PrivilegeMenuQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/aop/MyAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/aop/MyAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/constanct/CodeType.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/constanct/CodeType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/data/PageUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/data/PageUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/data/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/data/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/exl/ContentExl.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/exl/ContentExl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/exl/OutInfoExl.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/exl/OutInfoExl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/vo/WebSokcetVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/vo/WebSokcetVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/websocket/NettyType.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/entity/websocket/NettyType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/exception/ApplicationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/exception/ApplicationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/handle/ApplicationAdviceHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/handle/ApplicationAdviceHandle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/handle/GlobalResponseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/handle/GlobalResponseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/httpclient/ErrorResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/httpclient/ErrorResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/httpclient/HttpClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/httpclient/HttpClientUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/httpclient/HttpResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/httpclient/HttpResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/JwtParseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/JwtParseUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/JwtVerfy.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/JwtVerfy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/contain/LocalUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/contain/LocalUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/CityJwtBo.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/CityJwtBo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/PrivilegeMenuQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/PrivilegeMenuQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/UserLoginQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/UserLoginQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/Base64Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/Base64Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/CryptoUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/CryptoUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/ExcelUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/ExcelUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/ExceptionUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/ExceptionUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/FilesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/FilesUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/IdGenerator$SnowflakeIdWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/IdGenerator$SnowflakeIdWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/ShaUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/ShaUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/SignUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/SignUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/StringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/StringUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/WeekUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/WeekUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/vilidata/TimeData.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/vilidata/TimeData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/vilidata/query/PageQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/vilidata/query/PageQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/vilidata/query/TimeQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/vilidata/query/TimeQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/PayResourceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/PayResourceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/AuthInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/AuthInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/vo/AuthRegisterVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/vo/AuthRegisterVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/vo/TokenResultVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/vo/TokenResultVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/IAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/IAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/controller/PayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/impl/PayInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/impl/PayInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-resource/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +183,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8 (2)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/back-admin/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin-zuul/src/main/java/com/dkm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -58,21 +192,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\dkm\work\dkm_pay_project\back-admin\src\main\resources" />
-      <recent name="E:\dkm\work\dkm_pay_project\back-admin\src\main\resources\static" />
-      <recent name="E:\dkm\work\dkm_pay_project\back-admin\src\main\resources\source" />
-      <recent name="E:\dkm\work\dkm_pay_project\back-admin\src\main\java\com\dkm" />
-      <recent name="E:\dkm\work\dkm_pay_project\pay-resource\src\main\java\com\dkm" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.dkm.projectfig" />
-      <recent name="com.dkm.config" />
-      <recent name="com.dkm.authUser.controller" />
-      <recent name="com.dkm" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\dkm\work\dkm_pay_project\back-admin\src\main\resources\static\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dkm.config" />
+      <recent name="com.dkm.user.utils" />
+      <recent name="com.dkm.user.entity.bo" />
+      <recent name="com.dkm.authUser.controller" />
+      <recent name="com.dkm.projectfig" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\dkm\work\dkm_pay_project\admin-zuul\src\main\java\com\dkm" />
+      <recent name="E:\dkm\work\dkm_pay_project\user-resource\src\main\java\com\dkm\privilege\dao\mapper" />
+      <recent name="E:\dkm\work\dkm_pay_project\user-resource\src\main\java\com\dkm\type\dao\mapper" />
+      <recent name="E:\dkm\work\dkm_pay_project\user-resource\src\main\resources" />
+      <recent name="E:\dkm\work\dkm_pay_project\pay-resource\src\main\java\com\dkm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,6 +230,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="admin-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.AdminZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="back-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.BackAdminApplication" />
@@ -112,10 +254,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserResourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-resource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.UserResourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.BackAdminApplication" />
       <item itemvalue="Spring Boot.PayResourceApplication" />
       <item itemvalue="Spring Boot.AcdemicApplication" />
+      <item itemvalue="Spring Boot.UserResourceApplication" />
+      <item itemvalue="Spring Boot.AdminZuulApplication" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -234,7 +385,18 @@
       <workItem from="1595232320698" duration="1909000" />
       <workItem from="1595301378616" duration="9603000" />
       <workItem from="1595384898153" duration="1638000" />
-      <workItem from="1595466611103" duration="3507000" />
+      <workItem from="1595466611103" duration="4255000" />
+      <workItem from="1595582884015" duration="717000" />
+      <workItem from="1595584422091" duration="575000" />
+      <workItem from="1596417538798" duration="1988000" />
+      <workItem from="1596503605711" duration="811000" />
+      <workItem from="1596590842788" duration="606000" />
+      <workItem from="1597023481320" duration="12224000" />
+      <workItem from="1597108261749" duration="22521000" />
+      <workItem from="1597194250660" duration="21198000" />
+      <workItem from="1597281058964" duration="1474000" />
+      <workItem from="1597282875226" duration="479000" />
+      <workItem from="1597283603029" duration="16542000" />
     </task>
     <servers />
   </component>

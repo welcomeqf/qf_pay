@@ -17,14 +17,9 @@ public class AuthRegisterVo {
 
 
    /**
-    * 设备名称
+    * 设备id
     */
-   private String authName;
-
-   /**
-    * 设备描述
-    */
-   private String authDescribe;
+   private Long authProjectId;
 
    /**
     * 支付宝的appID
