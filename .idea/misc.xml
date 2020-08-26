@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/advertise-resource" />
     <file type="web" url="file://$PROJECT_DIR$/back" />
     <file type="web" url="file://$PROJECT_DIR$/back-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/file-resource" />
     <file type="web" url="file://$PROJECT_DIR$/pay-back" />
     <file type="web" url="file://$PROJECT_DIR$/pay-resource" />
     <file type="web" url="file://$PROJECT_DIR$/user-resource" />
@@ -18,6 +19,7 @@
         <option value="$PROJECT_DIR$/advertise-resource/pom.xml" />
         <option value="$PROJECT_DIR$/user-resource/pom.xml" />
         <option value="$PROJECT_DIR$/admin-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/file-resource/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

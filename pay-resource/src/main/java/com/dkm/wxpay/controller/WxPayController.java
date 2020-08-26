@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2020/3/19
  * @vesion 1.0
  **/
-@Api
+@Api(tags = "微信支付API")
 @Slf4j
 @RestController
 @RequestMapping("/v1/wx")

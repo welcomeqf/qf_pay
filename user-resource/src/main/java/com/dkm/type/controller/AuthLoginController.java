@@ -24,7 +24,7 @@ import java.util.List;
  * @vesion 1.0
  **/
 @Slf4j
-@Api(tags = "设备对应的登录方式Api")
+@Api(tags = "(后台)设备对应的登录方式Api")
 @RestController
 @RequestMapping("/v1/authLogin")
 public class AuthLoginController {

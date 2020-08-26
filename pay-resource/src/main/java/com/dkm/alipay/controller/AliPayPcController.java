@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2020/3/16
  * @vesion 1.0
  **/
-@Api
+@Api(tags = "支付宝支付API")
 @Slf4j
 @RestController
 @RequestMapping("/v1/ali")

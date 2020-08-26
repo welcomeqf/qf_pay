@@ -1,5 +1,6 @@
 package com.dkm.userAdmin.service;
 
+import com.dkm.userAdmin.entity.UserAdmin;
 import com.dkm.userAdmin.entity.vo.LoginVo;
 
 /**
@@ -22,5 +23,5 @@ public interface IAdminService {
     * @param userName
     * @param password
     */
-   void loginAdmin(String userName, String password);
+   UserAdmin loginAdmin(String userName, String password);
 }

@@ -16,7 +16,6 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -27,7 +26,7 @@ import java.util.List;
  * @date 2020/3/16
  * @vesion 1.0
  **/
-@Api(tags = "设备权限详情API")
+@Api(tags = "(后台)设备权限详情API")
 @RestController
 @RequestMapping("/v1/auth")
 public class AuthController {
@@ -73,7 +72,7 @@ public class AuthController {
       UserLoginQuery query = authService.authLogin(vo);
 
       //86400000L
-      String token = JwtUtil.createJWT(1000 * 60 * 60 * 24L, query);
+      String token = JwtUtil.createjwt(1000 * 60 * 60 * 24L, query);
 
       TokenResultVo resultVo = new TokenResultVo();
       resultVo.setToken(token);

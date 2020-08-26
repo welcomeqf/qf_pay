@@ -114,6 +114,10 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
          throw new ApplicationException(CodeType.SERVICE_ERROR, "用户名或密码错误");
       }
 
+      if (authInfo.getStatus() == 1) {
+         throw new ApplicationException(CodeType.SERVICE_ERROR, "该工程项目已停用..");
+      }
+
       if (authInfo.getIsStopped() == 1) {
          throw new ApplicationException(CodeType.SERVICE_ERROR, "该设备已停用");
       }
@@ -143,5 +147,16 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
       LambdaQueryWrapper<AuthInfo> wrapper = new LambdaQueryWrapper<AuthInfo>()
             .eq(AuthInfo::getAuthProjectId, authProjectId);
       return baseMapper.selectList(wrapper);
+   }
+
+   @Override
+   public void updateToStopAuth(Long authProjectId, Integer status) {
+      LambdaQueryWrapper<AuthInfo> wrapper = new LambdaQueryWrapper<AuthInfo>()
+            .eq(AuthInfo::getAuthProjectId, authProjectId);
+
+      AuthInfo authInfo = new AuthInfo();
+      authInfo.setStatus(status);
+
+      baseMapper.update(authInfo, wrapper);
    }
 }

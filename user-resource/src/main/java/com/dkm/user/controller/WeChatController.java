@@ -45,12 +45,4 @@ public class WeChatController {
       }
       return userService.weChatLoginUserInfo(code);
    }
-
-   @GetMapping("/get")
-   @CheckToken
-   public UserResultVo get () {
-      UserResultVo vo = new UserResultVo();
-      vo.setToken("123");
-      return vo;
-   }
 }

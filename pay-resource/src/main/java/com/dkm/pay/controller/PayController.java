@@ -1,6 +1,7 @@
 package com.dkm.pay.controller;
 
 import com.dkm.alipay.service.IAliPayService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
  * @vesion 1.0
  **/
 @Slf4j
+@Api(tags = "支付宝回调接口")
 @RestController
 @RequestMapping("/returnPay")
 public class PayController {
@@ -23,7 +25,7 @@ public class PayController {
    private IAliPayService aliPayService;
 
 
-   @PostMapping("/updateInfo")
+   @RequestMapping("/updateInfo")
    @CrossOrigin
    public String getReturnInfo (HttpServletRequest request) {
       //支付宝回调接口

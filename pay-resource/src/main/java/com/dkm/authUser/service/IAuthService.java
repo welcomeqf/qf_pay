@@ -42,4 +42,11 @@ public interface IAuthService {
     */
    List<AuthInfo> listAuth(Long authProjectId);
 
+   /**
+    *  停用项目工程  从而停用所有设备
+    * @param authProjectId 项目工程id
+    * @param status 0--正常  1--禁用
+    */
+   void updateToStopAuth (Long authProjectId, Integer status);
+
 }

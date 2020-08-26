@@ -22,7 +22,7 @@ import java.util.List;
  * @vesion 1.0
  **/
 @Slf4j
-@Api(tags = "登录方式API")
+@Api(tags = "(后台)登录方式API")
 @RestController
 @RequestMapping("/v1/loginType")
 public class UserLoginTypeController {

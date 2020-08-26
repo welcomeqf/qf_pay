@@ -29,12 +29,12 @@ public class AuthInfo extends Model<AuthInfo> {
    private Long id;
 
    /**
-    * appID
+    * 支付宝appID
     */
    private String appId;
 
    /**
-    * 设备id
+    * 设备工程id
     */
    private Long authProjectId;
 
@@ -90,4 +90,9 @@ public class AuthInfo extends Model<AuthInfo> {
     * 微信的AppID
     */
    private String wxAppId;
+
+   /**
+    *  0--正常  1--禁用
+    */
+   private Integer status;
 }

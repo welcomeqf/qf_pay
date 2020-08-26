@@ -6,7 +6,6 @@ import com.dkm.constanct.CodeType;
 import com.dkm.exception.ApplicationException;
 import com.dkm.jwt.contain.LocalUser;
 import com.dkm.jwt.entity.UserLoginQuery;
-import com.dkm.type.entity.vo.AuthLoginVo;
 import com.dkm.user.dao.UserMapper;
 import com.dkm.user.entity.User;
 import com.dkm.user.entity.bo.UserBO;
@@ -28,7 +27,6 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author qf
@@ -137,7 +135,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
       UserLoginQuery query = new UserLoginQuery();
       query.setId(user.getId());
       //24小时
-      String token = JwtUtil.createJWT(1000 * 60 * 60 * 24, query);
+      String token = JwtUtil.createJwt(1000 * 60 * 60 * 24, query);
       vo.setToken(token);
       LocalDateTime time = LocalDateTime.now().plusDays(1);
       String date = DateUtil.formatDateTime(time);
@@ -257,7 +255,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
       UserLoginQuery query = new UserLoginQuery();
       query.setId(userId);
       //24小时
-      String token = JwtUtil.createJWT(1000 * 60 * 60 * 24, query);
+      String token = JwtUtil.createJwt(1000 * 60 * 60 * 24, query);
       vo.setToken(token);
       LocalDateTime time = LocalDateTime.now().plusDays(1);
       String date = DateUtil.formatDateTime(time);

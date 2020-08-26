@@ -6,6 +6,7 @@ import com.dkm.authProject.dao.AuthProjectMapper;
 import com.dkm.authProject.entity.AuthProject;
 import com.dkm.authProject.entity.bo.AuthProjectBO;
 import com.dkm.authProject.service.IAuthProjectService;
+import com.dkm.authUser.service.IAuthService;
 import com.dkm.constanct.CodeType;
 import com.dkm.exception.ApplicationException;
 import com.dkm.utils.IdGenerator;
@@ -31,6 +32,9 @@ public class AuthProjectServiceImpl extends ServiceImpl<AuthProjectMapper, AuthP
 
    @Autowired
    private IdGenerator idGenerator;
+
+   @Autowired
+   private IAuthService authService;
 
    @Override
    public void addOrUpdateProject(AuthProjectBO authProjectBO) {
@@ -89,5 +93,8 @@ public class AuthProjectServiceImpl extends ServiceImpl<AuthProjectMapper, AuthP
       if (updateById <= 0) {
          throw new ApplicationException(CodeType.SERVICE_ERROR, "修改失败");
       }
+
+      //同时修改设备的状态
+      authService.updateToStopAuth(projectId, status);
    }
 }

@@ -7,6 +7,9 @@
         <module>common</module>
         <module>pay-resource</module>
         <module>back-admin</module>
+        <module>user-resource</module>
+        <module>admin-zuul</module>
+        <module>file-resource</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

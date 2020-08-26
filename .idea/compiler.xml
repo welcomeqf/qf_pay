@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="file-resource" />
         <module name="back-admin" />
         <module name="common" />
         <module name="user-resource" />
@@ -21,6 +22,7 @@
       <module name="back-admin" target="1.8" />
       <module name="common" target="1.8" />
       <module name="dkm_pay_project" target="1.8" />
+      <module name="file-resource" target="1.8" />
       <module name="pay-resource" target="1.8" />
       <module name="payback" target="1.8" />
       <module name="user-resource" target="1.8" />
@@ -34,6 +36,7 @@
       <module name="back-admin" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="dkm_pay_project" options="" />
+      <module name="file-resource" options="-parameters" />
       <module name="pay-resource" options="-parameters" />
       <module name="payback" options="-parameters" />
       <module name="user-resource" options="-parameters" />

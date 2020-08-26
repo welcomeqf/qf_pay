@@ -61,7 +61,7 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, UserAdmin> implem
    }
 
    @Override
-   public void loginAdmin(String userName, String password) {
+   public UserAdmin loginAdmin(String userName, String password) {
 
       LambdaQueryWrapper<UserAdmin> wrapper = new LambdaQueryWrapper<UserAdmin>()
             .eq(UserAdmin::getUserName,userName)
@@ -77,5 +77,6 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, UserAdmin> implem
          throw new ApplicationException(CodeType.SERVICE_ERROR, "该账号已被冻结");
       }
 
+      return admin;
    }
 }

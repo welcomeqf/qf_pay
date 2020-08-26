@@ -2,6 +2,7 @@ package com.dkm.userAdmin.controller;
 
 import com.dkm.constanct.CodeType;
 import com.dkm.exception.ApplicationException;
+import com.dkm.userAdmin.entity.UserAdmin;
 import com.dkm.userAdmin.entity.vo.AdminVo;
 import com.dkm.userAdmin.entity.vo.LoginVo;
 import com.dkm.userAdmin.service.IAdminService;
@@ -20,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
  * @date 2020/3/25
  * @vesion 1.0
  **/
-@Api
+@Api(tags = "(后台)后台管理登录注册")
 @Slf4j
 @RestController
 @RequestMapping("/v1/admin")
@@ -53,13 +54,13 @@ public class AdminController {
    })
    @PostMapping("/loginAdmin")
    @CrossOrigin
-   public void loginAdmin (@RequestBody AdminVo vo) {
+   public UserAdmin loginAdmin (@RequestBody AdminVo vo) {
 
       if (StringUtils.isBlank(vo.getUserName()) || StringUtils.isBlank(vo.getPassword())) {
          throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
       }
 
-       adminService.loginAdmin(vo.getUserName(), vo.getPassword());
+       return adminService.loginAdmin(vo.getUserName(), vo.getPassword());
    }
 
 }

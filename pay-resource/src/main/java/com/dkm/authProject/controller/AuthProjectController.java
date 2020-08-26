@@ -3,8 +3,6 @@ package com.dkm.authProject.controller;
 import com.dkm.authProject.entity.AuthProject;
 import com.dkm.authProject.entity.bo.AuthProjectBO;
 import com.dkm.authProject.service.IAuthProjectService;
-import com.dkm.authUser.entity.vo.AuthLoginVo;
-import com.dkm.authUser.entity.vo.AuthRegisterVo;
 import com.dkm.constanct.CodeType;
 import com.dkm.exception.ApplicationException;
 import com.dkm.utils.StringUtils;
@@ -14,7 +12,6 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,7 +23,7 @@ import java.util.List;
  **/
 @Slf4j
 @RestController
-@Api(tags = "项目工程的Api")
+@Api(tags = "(后台)项目工程的Api")
 @RequestMapping("/v1/project")
 public class AuthProjectController {
 
@@ -48,7 +45,6 @@ public class AuthProjectController {
       if (StringUtils.isBlank(bo.getAuthName()) || bo.getAuthStatus() == null) {
          throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
       }
-
       authProjectService.addOrUpdateProject(bo);
    }
 

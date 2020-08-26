@@ -1,0 +1,22 @@
+server:
+  port: 8003
+  max-http-header-size: 102400
+spring:
+  application:
+    name: file
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  jmx:
+    enabled: false
+app:
+  workerId: 9
+  dataCenterId: 1
+#上传文件路径
+file:
+  url: http://${service.fileServer}:${service.port}/file/img
+service:
+  fileServer: 192.168.10.254
+  port: 20004
+
