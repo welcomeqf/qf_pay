@@ -18,6 +18,8 @@ import com.dkm.constanct.CodeType;
 import com.dkm.exception.ApplicationException;
 import com.dkm.httpclient.HttpClientUtils;
 import com.dkm.httpclient.HttpResult;
+import com.dkm.jwt.contain.LocalUser;
+import com.dkm.jwt.entity.UserLoginQuery;
 import com.dkm.pay.entity.PayInfo;
 import com.dkm.pay.entity.vo.PayParamVo;
 import com.dkm.pay.entity.vo.PayReturnVo;
@@ -60,6 +62,9 @@ public class AliPayServiceImpl implements IAliPayService {
    private String notifyServerUrl;
 
    private String tradeSuccess = "TRADE_SUCCESS";
+
+   @Autowired
+   private LocalUser localUser;
 
    @Override
    public void aliPcPay(String orderNo, Double price, String subject, String body, String returnUrl, String notifyUrl, HttpServletResponse httpResponse) {
@@ -125,8 +130,9 @@ public class AliPayServiceImpl implements IAliPayService {
 
    @Override
    public Object queryPay(String orderNo, Integer queryType) {
+      UserLoginQuery user = localUser.getUser();
       //查询appId
-      String appId = payInfoService.queryAppId();
+      String appId = payInfoService.queryAppId(user.getId());
 
       PayInfo payInfo = payInfoService.queryOne(orderNo);
 
@@ -187,7 +193,9 @@ public class AliPayServiceImpl implements IAliPayService {
    @Override
    public AliRefundVo aliPayCreateOrderRefund(String orderNo, Double money) {
 
-      String appId = payInfoService.queryAppId();
+      UserLoginQuery user = localUser.getUser();
+
+      String appId = payInfoService.queryAppId(user.getId());
 
       PayInfo payInfo = payInfoService.queryOne(orderNo);
 

@@ -38,10 +38,11 @@ public interface IPayInfoService {
    String updateAliPayStatus (PayParamVo vo);
 
    /**
-    * 查询数据库的appId
+    *  查询数据库的appId
+    * @param userId
     * @return
     */
-   String queryAppId ();
+   String queryAppId (Long userId);
 
    /**
     * 查询微信支付的相关信息

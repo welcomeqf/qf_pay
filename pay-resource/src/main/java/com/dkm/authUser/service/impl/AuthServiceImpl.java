@@ -114,6 +114,10 @@ public class AuthServiceImpl extends ServiceImpl<AuthMapper, AuthInfo> implement
          throw new ApplicationException(CodeType.SERVICE_ERROR, "用户名或密码错误");
       }
 
+      if (authInfo.getStatus() == null) {
+         authInfo.setStatus(0);
+      }
+
       if (authInfo.getStatus() == 1) {
          throw new ApplicationException(CodeType.SERVICE_ERROR, "该工程项目已停用..");
       }

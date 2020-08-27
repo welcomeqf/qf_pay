@@ -2,47 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/entity/vo/FileVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/utils/QrCodeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file-resource/src/main/java/com/dkm/file/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file-resource/src/main/java/com/dkm/file/service/IFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file-resource/src/main/java/com/dkm/file/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file-resource/src/main/java/com/dkm/file/utils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file-resource/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-zuul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/ThreadLocalMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/Interceptor/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/Interceptor/AuthenticationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/Interceptor/JwtParseUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/JwtVerfy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/projectfig/LongToJsonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/projectfig/LongToJsonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/LocalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/LocalUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/utils/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/AuthenticationInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/AuthenticationInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/JwtParseUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/JwtVerfy.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/contain/LocalUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/contain/LocalUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/PrivilegeMenuQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/entity/PrivilegeMenuQuery.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-resource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/controller/AliPayPcController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/controller/AuthProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/controller/AuthProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/service/impl/AuthProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authProject/service/impl/AuthProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/impl/AliPayServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/AuthInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/entity/AuthInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/IAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/IAuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/controller/PayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/IAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-resource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/controller/AuthLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/controller/AuthLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/controller/UserLoginTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/type/controller/UserLoginTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/WeChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/WeChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/IPayInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/IPayInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/impl/PayInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/impl/PayInfoServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminZuulApplication">
+  <component name="RunManager" selected="Spring Boot.PayResourceApplication">
     <configuration name="AcdemicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="advertise-resource" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.AcdemicApplication" />
@@ -318,7 +290,8 @@
       <workItem from="1598232751547" duration="6795000" />
       <workItem from="1598249661363" duration="1728000" />
       <workItem from="1598318061824" duration="1154000" />
-      <workItem from="1598410916069" duration="4176000" />
+      <workItem from="1598410916069" duration="10828000" />
+      <workItem from="1598487919047" duration="2915000" />
     </task>
     <servers />
   </component>

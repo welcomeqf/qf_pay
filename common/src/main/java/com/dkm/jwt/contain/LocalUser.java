@@ -17,7 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class LocalUser {
 
 
-    private Map<String,Object> map = new ConcurrentHashMap<>();
+//    private Map<String,Object> map = new ConcurrentHashMap<>();
 
 
     /**
@@ -25,7 +25,8 @@ public class LocalUser {
      * @return
      */
     public void setUser (UserLoginQuery vo) {
-        map.put("user",vo);
+        ThreadLocalMap.set(vo);
+//        map.put("user",vo);
     }
 
 
@@ -34,6 +35,9 @@ public class LocalUser {
      * @return
      */
     public UserLoginQuery getUser () {
-        return (UserLoginQuery) map.get("user");
+        UserLoginQuery query = ThreadLocalMap.get();
+        ThreadLocalMap.remove();
+//        return (UserLoginQuery) map.get("user");
+        return query;
     }
 }

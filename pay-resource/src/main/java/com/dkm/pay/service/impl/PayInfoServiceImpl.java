@@ -200,11 +200,9 @@ public class PayInfoServiceImpl extends ServiceImpl<PayInfoMapper, PayInfo> impl
 
 
    @Override
-   public String queryAppId() {
+   public String queryAppId(Long userId) {
 
-      UserLoginQuery user = localUser.getUser();
-
-      AuthInfo authInfo = authService.queryAuthOne(user.getId());
+      AuthInfo authInfo = authService.queryAuthOne(userId);
 
       if (authInfo == null) {
          throw new ApplicationException(CodeType.SERVICE_ERROR, "分配的设备账号有误");
