@@ -3,6 +3,8 @@ package com.dkm.userAdmin.service;
 import com.dkm.userAdmin.entity.UserAdmin;
 import com.dkm.userAdmin.entity.vo.LoginVo;
 
+import java.util.List;
+
 /**
  * @author qf
  * @date 2020/3/25
@@ -24,4 +26,10 @@ public interface IAdminService {
     * @param password
     */
    UserAdmin loginAdmin(String userName, String password);
+
+   /**
+    *  展示所有用户
+    * @return 返回
+    */
+   List<UserAdmin> listUserAdmin ();
 }

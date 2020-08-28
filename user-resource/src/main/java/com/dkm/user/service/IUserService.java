@@ -39,9 +39,10 @@ public interface IUserService {
    /**
     *  微信登录
     * @param code 微信登录的授权code
+    * @param key 创建token的key
     * @return 返回token
     */
-   UserResultVo weChatLoginUserInfo(String code);
+   UserResultVo weChatLoginUserInfo(String code, String key);
 
    /**
     *  查询一条用户信息

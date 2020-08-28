@@ -10,13 +10,11 @@ import com.dkm.user.utils.BodyUtils;
 import com.dkm.utils.StringUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -35,14 +33,20 @@ public class WeChatController {
    private IUserService userService;
 
    @PostMapping("/login")
+   @CrossOrigin
+   @CheckToken
    @ApiOperation(value = "微信登录接口",notes = "传入微信登录code码，换取微信信息，和Token",produces = "application/json")
-   @ApiImplicitParam(name = "code",value = "微信登录code码",dataType = "String", required = true, paramType = "body")
+   @ApiImplicitParams({
+         @ApiImplicitParam(name = "code",value = "微信登录code码",dataType = "String", required = true, paramType = "body"),
+         @ApiImplicitParam(name = "key",value = "创建token的key",dataType = "String", required = true, paramType = "body")
+   })
    public UserResultVo weChatLoginUserInfo(HttpServletRequest request){
       JSONObject json = BodyUtils.bodyJson(request);
       String code = json.getString("code");
-      if (StringUtils.isBlank(code)){
+      String key = json.getString("key");
+      if (StringUtils.isBlank(code) || StringUtils.isBlank(key)){
          throw new ApplicationException(CodeType.SERVICE_ERROR, "参数不能为空");
       }
-      return userService.weChatLoginUserInfo(code);
+      return userService.weChatLoginUserInfo(code, key);
    }
 }

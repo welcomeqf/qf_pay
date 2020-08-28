@@ -19,4 +19,9 @@ public class UserLoginBO {
     * 密码
     */
    private String password;
+
+   /**
+    *  创建token的key
+    */
+   private String key;
 }

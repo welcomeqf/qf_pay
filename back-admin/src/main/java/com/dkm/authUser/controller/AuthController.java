@@ -77,7 +77,7 @@ public class AuthController {
       UserLoginQuery query = authService.authLogin(vo);
 
       //86400000L
-      String token = JwtUtil.createjwt(1000 * 60 * 60 * 24L, query);
+      String token = JwtUtil.createJwt(1000 * 60 * 60 * 24L, query);
 
       TokenResultVo resultVo = new TokenResultVo();
       resultVo.setToken(token);

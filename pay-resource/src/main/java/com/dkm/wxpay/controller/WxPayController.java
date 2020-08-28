@@ -103,8 +103,6 @@ public class WxPayController {
       wxService.callBack (request, response);
    }
 
-
-
    @ApiOperation(value = "微信公众号支付", notes = "微信公众号支付")
    @ApiImplicitParams({
          @ApiImplicitParam(name = "orderNo", value = "订单号", required = true, dataType = "String", paramType = "path"),

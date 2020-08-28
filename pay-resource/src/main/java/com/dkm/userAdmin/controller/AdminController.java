@@ -16,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @author qf
  * @date 2020/3/25
@@ -61,6 +63,14 @@ public class AdminController {
       }
 
        return adminService.loginAdmin(vo.getUserName(), vo.getPassword());
+   }
+
+
+   @ApiOperation(value = "登录", notes = "登录")
+   @GetMapping("/loginAdmin")
+   @CrossOrigin
+   public List<UserAdmin> listUserAdmin () {
+      return adminService.listUserAdmin();
    }
 
 }

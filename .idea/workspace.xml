@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/ThreadLocalMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/Interceptor/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/Interceptor/AuthenticationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/LocalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/jwt/contain/LocalUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-admin/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/dkm/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/dkm/utils/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/AuthenticationInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/Interceptor/AuthenticationInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/contain/LocalUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/jwt/contain/LocalUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-resource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/alipay/service/impl/AliPayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/authUser/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/IPayInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/IPayInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/impl/PayInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/pay/service/impl/PayInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/IAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/userAdmin/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/src/main/java/com/dkm/wxpay/controller/WxPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/WeChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/controller/WeChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/bo/UserLoginBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/entity/bo/UserLoginBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-resource/src/main/java/com/dkm/user/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +293,8 @@
       <workItem from="1598249661363" duration="1728000" />
       <workItem from="1598318061824" duration="1154000" />
       <workItem from="1598410916069" duration="10828000" />
-      <workItem from="1598487919047" duration="2915000" />
+      <workItem from="1598487919047" duration="15961000" />
+      <workItem from="1598577386968" duration="1367000" />
     </task>
     <servers />
   </component>

@@ -15,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author qf
  * @date 2020/3/25
@@ -78,5 +80,10 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, UserAdmin> implem
       }
 
       return admin;
+   }
+
+   @Override
+   public List<UserAdmin> listUserAdmin() {
+      return baseMapper.selectList(null);
    }
 }

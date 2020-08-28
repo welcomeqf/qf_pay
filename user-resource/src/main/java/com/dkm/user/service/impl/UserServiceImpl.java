@@ -135,7 +135,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
       UserLoginQuery query = new UserLoginQuery();
       query.setId(user.getId());
       //24小时
-      String token = JwtUtil.createJwt(1000 * 60 * 60 * 24, query);
+      String token = JwtUtil.createJwt(1000 * 60 * 60 * 24, query, bo.getKey());
       vo.setToken(token);
       LocalDateTime time = LocalDateTime.now().plusDays(1);
       String date = DateUtil.formatDateTime(time);
@@ -189,7 +189,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
    }
 
    @Override
-   public UserResultVo weChatLoginUserInfo(String code) {
+   public UserResultVo weChatLoginUserInfo(String code, String key) {
+
+      UserLoginQuery loginQuery = localUser.getUser();
 
       //定义用户id生成token
       Long userId;
@@ -198,7 +200,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
          //查询用户
          LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<User>()
-               .eq(User::getWeChatOpenId, weChatUtilBO.getWeChatOpenId());
+               .eq(User::getWeChatOpenId, weChatUtilBO.getWeChatOpenId())
+               .eq(User::getAuthId, loginQuery.getId());
 
          User user = baseMapper.selectOne(wrapper);
 
@@ -207,6 +210,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             User user1 = new User();
             userId = idGenerator.getNumberId();
             user1.setId(userId);
+            user1.setAuthId(loginQuery.getId());
             user1.setWeChatOpenId(weChatUtilBO.getWeChatOpenId());
             user1.setCName(weChatUtilBO.getWeChatNickName());
             if ("1".equals(weChatUtilBO.getWeChatSex())) {
@@ -255,7 +259,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
       UserLoginQuery query = new UserLoginQuery();
       query.setId(userId);
       //24小时
-      String token = JwtUtil.createJwt(1000 * 60 * 60 * 24, query);
+      String token = JwtUtil.createJwt(1000 * 60 * 60 * 24, query, key);
       vo.setToken(token);
       LocalDateTime time = LocalDateTime.now().plusDays(1);
       String date = DateUtil.formatDateTime(time);

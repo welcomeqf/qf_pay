@@ -58,18 +58,18 @@ public class UserController {
       userService.addUser(bo);
    }
 
-
    @ApiOperation(value = "用户账号密码登录", notes = "用户账号密码登录")
    @ApiImplicitParams({
          @ApiImplicitParam(name = "userName", value = "账号", required = true, dataType = "String", paramType = "path"),
          @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String", paramType = "path"),
+         @ApiImplicitParam(name = "key", value = "创建token的key", required = true, dataType = "String", paramType = "path")
         })
    @PostMapping("/loginUser")
    @CrossOrigin
    @CheckToken
    public UserResultVo loginUser (@RequestBody UserLoginBO bo) {
-      if (StringUtils.isBlank(bo.getUserName()) || StringUtils.isBlank(bo.getPassword())) {
-         throw new ApplicationException(CodeType.PARAMETER_ERROR, "账号或者密码不能为空");
+      if (StringUtils.isBlank(bo.getUserName()) || StringUtils.isBlank(bo.getPassword()) || StringUtils.isBlank(bo.getKey())) {
+         throw new ApplicationException(CodeType.PARAMETER_ERROR, "参数不能为空");
       }
       return userService.loginUser(bo);
    }
