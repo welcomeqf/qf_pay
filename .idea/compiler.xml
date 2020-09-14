@@ -6,11 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="file-resource" />
+        <module name="user-resource" />
         <module name="back-admin" />
         <module name="common" />
-        <module name="user-resource" />
-        <module name="advertise-resource" />
+        <module name="file-resource" />
         <module name="admin-zuul" />
         <module name="pay-resource" />
       </profile>

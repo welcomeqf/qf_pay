@@ -16,7 +16,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pay-resource/pom.xml" />
         <option value="$PROJECT_DIR$/back-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/advertise-resource/pom.xml" />
         <option value="$PROJECT_DIR$/user-resource/pom.xml" />
         <option value="$PROJECT_DIR$/admin-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/file-resource/pom.xml" />
