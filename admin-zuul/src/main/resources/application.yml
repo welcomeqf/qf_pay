@@ -8,12 +8,11 @@ spring:
 zuul:
   routes:
     user-url:
-      path: /**/user/**
-      url: http://${service.ip}:20002/user
+      path: /user/**
+      url: http://${service.ip}:20002/user/
     pay-url:
-      path: /**/pay/**
-      url: http://${service.ip}:20001/pay
-
+      path: /pay/**
+      url: http://${service.ip}:20001/pay/
 service:
   ip: 192.168.10.254
 

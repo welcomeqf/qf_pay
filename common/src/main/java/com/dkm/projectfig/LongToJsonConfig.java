@@ -4,6 +4,7 @@ import com.dkm.jwt.Interceptor.AuthenticationInterceptor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
@@ -24,7 +25,10 @@ import java.util.List;
  * @Version 1.0
  */
 @Configuration
-public class LongToJsonConfig extends WebMvcConfigurationSupport implements WebMvcConfigurer {
+public class LongToJsonConfig extends WebMvcConfigurationSupport{
+
+    @Autowired
+    private AuthenticationInterceptor authenticationInterceptor;
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
@@ -39,59 +43,9 @@ public class LongToJsonConfig extends WebMvcConfigurationSupport implements WebM
     }
 
     @Override
-    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-
-    }
-
-    @Override
-    public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {
-
-    }
-
-    @Override
-    public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {
-
-    }
-
-    @Override
-    public Validator getValidator() {
-        return null;
-    }
-
-    @Override
-    public MessageCodesResolver getMessageCodesResolver() {
-        return null;
-    }
-
-    @Override
-    public void configurePathMatch(PathMatchConfigurer configurer) {
-
-    }
-
-    @Override
-    public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-
-    }
-
-    @Override
-    public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
-
-    }
-
-    @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-
-    }
-
-    @Override
-    public void addFormatters(FormatterRegistry registry) {
-
-    }
-
-    @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 拦截所有请求，通过判断是否有 @LoginRequired 注解 决定是否需要登录
-        registry.addInterceptor(authenticationInterceptor())
+        registry.addInterceptor(authenticationInterceptor)
                 .addPathPatterns("/**");
     }
 
@@ -103,36 +57,6 @@ public class LongToJsonConfig extends WebMvcConfigurationSupport implements WebM
               "classpath:/META-INF/resources/webjars/");
         registry.addResourceHandler("/img/**").addResourceLocations("file:E://img/img-admin/");
         super.addResourceHandlers(registry);
-    }
-
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-
-    }
-
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-
-    }
-
-    @Override
-    public void configureViewResolvers(ViewResolverRegistry registry) {
-
-    }
-
-    @Override
-    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
-
-    }
-
-    @Override
-    public void addReturnValueHandlers(List<HandlerMethodReturnValueHandler> handlers) {
-
-    }
-
-    @Bean
-    public AuthenticationInterceptor authenticationInterceptor() {
-        return new AuthenticationInterceptor();
     }
 
 }

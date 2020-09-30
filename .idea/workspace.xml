@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="" />
+    <list default="true" id="df142622-bd41-4888-9b7f-5718a85b6d7b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/admin-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/dkm/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-resource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-resource/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PayResourceApplication">
-    <configuration name="AcdemicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="advertise-resource" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.AcdemicApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.AdminZuulApplication">
     <configuration name="AdminZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="admin-zuul" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dkm.AdminZuulApplication" />
@@ -135,7 +133,6 @@
     <list>
       <item itemvalue="Spring Boot.BackAdminApplication" />
       <item itemvalue="Spring Boot.PayResourceApplication" />
-      <item itemvalue="Spring Boot.AcdemicApplication" />
       <item itemvalue="Spring Boot.UserResourceApplication" />
       <item itemvalue="Spring Boot.AdminZuulApplication" />
       <item itemvalue="Spring Boot.FileResourceApplication" />
@@ -282,6 +279,11 @@
       <workItem from="1598929304981" duration="9522000" />
       <workItem from="1599443644820" duration="24000" />
       <workItem from="1599443717695" duration="86000" />
+      <workItem from="1600046980501" duration="758000" />
+      <workItem from="1600051152164" duration="2003000" />
+      <workItem from="1600065694516" duration="348000" />
+      <workItem from="1600150404228" duration="2000" />
+      <workItem from="1600150654465" duration="130000" />
     </task>
     <servers />
   </component>
